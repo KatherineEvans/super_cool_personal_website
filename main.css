@@ -1,0 +1,37 @@
+body {
+    background: #F5EFE1;
+    color: #163316;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  .flex-container {
+    display: flex;
+  }
+
+  .responsive {
+    width: 100%;
+    height: auto;
+  }
+
+  .name-size {
+    overflow-wrap: break-word;
+    float: left;
+    font-weight: 725;
+    font-size: 5em;
+  }
+
+  .title-size {
+    font-size: 50px !important;
+    float: left;
+    margin-right: 3rem;
+    margin-top: 1rem;
+    font-weight: 550;
+  }
+
+  .email-size {
+    font-size: 20px !important;
+    float: left;
+    margin-right: 3rem;
+    margin-top: 1rem;
+    font-weight: 400;
+  }
