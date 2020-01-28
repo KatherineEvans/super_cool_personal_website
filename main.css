@@ -4,20 +4,27 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
   }
 
+  .btn-primary {
+    background: #163316 !important;
+    border-color:  #163316 !important;
+    color: white;
+  }
+
   .flex-container {
     display: flex;
   }
 
   .responsive {
-    width: 100%;
-    height: auto;
+    max-height: 500px;
+    max-width: 100%;
   }
 
   .name-size {
     overflow-wrap: break-word;
     float: left;
     font-weight: 725;
-    font-size: 5em;
+    font-size: 75px;
+    line-height: 1em;
   }
 
   .title-size {
@@ -26,12 +33,22 @@ body {
     margin-right: 3rem;
     margin-top: 1rem;
     font-weight: 550;
+    line-height: 1em;
   }
 
   .email-size {
     font-size: 20px !important;
     float: left;
     margin-right: 3rem;
-    margin-top: 1rem;
-    font-weight: 400;
+    margin-top: 1.5rem;
+    font-weight: 550;
+  }
+  .round-btn {
+    display:block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border-color:  #163316 !important;
+    background-color: #163316 !important;
+    color: white;
   }
