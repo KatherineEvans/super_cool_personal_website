@@ -9,6 +9,10 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
   }
 
+  .about-section{
+    margin-top: 2rem
+  }
+  
   .fill { 
     min-height: 100%;
     height: 100%;
@@ -27,6 +31,7 @@ body {
   .responsive {
     max-height: 500px;
     max-width: 100%;
+    margin: auto;
   }
 
   .name-size {
@@ -38,7 +43,7 @@ body {
   }
 
   .title-size {
-    font-size: 45px !important;
+    font-size: 45px;
     float: left;
     margin-right: 3rem;
     margin-top: .35rem;
@@ -47,7 +52,7 @@ body {
   }
 
   .email-size {
-    font-size: 20px !important;
+    font-size: 20px;
     float: left;
     margin-right: 3rem;
     margin-top: .65rem;
@@ -69,3 +74,52 @@ body {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
   }
+
+@media screen and (max-width: 500px) {
+  .name-size {
+    font-size: 55px !important;
+    margin-top: 2rem;
+  }
+  .title-size {
+    font-size: 30px;
+    margin-right: 0rem;
+  }
+  .email-size {
+    font-size: 20px;
+    margin-right: 0rem;
+    font-weight: 450;
+  }
+  .about-section{
+    margin-top: 2rem
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .name-size {
+    font-size: 55px !important;
+  }
+  .title-size {
+    font-size: 30px;
+    margin-right: 0rem;
+  }
+  .email-size {
+    font-size: 20px;
+    margin-right: 0rem;
+    font-weight: 450;
+  }
+  .about-section{
+    margin-top: 2rem
+  }
+}
+
+@media screen and (min-width: 800px) {
+  
+}
+
+@media screen and (min-width: 1000px) {
+  
+}
+
+@media screen and (min-width: 1300px) {
+  
+}
