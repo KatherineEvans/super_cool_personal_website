@@ -1,7 +1,17 @@
+html {
+  height:100%;
+}
+
 body {
+    height:100%;
     background: #F5EFE1;
     color: #163316;
     font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  .fill { 
+    min-height: 100%;
+    height: 100%;
   }
 
   .btn-primary {
@@ -28,11 +38,11 @@ body {
   }
 
   .title-size {
-    font-size: 50px !important;
+    font-size: 45px !important;
     float: left;
     margin-right: 3rem;
-    margin-top: 1rem;
-    font-weight: 550;
+    margin-top: .35rem;
+    font-weight: 450;
     line-height: 1em;
   }
 
@@ -40,15 +50,22 @@ body {
     font-size: 20px !important;
     float: left;
     margin-right: 3rem;
-    margin-top: 1.5rem;
+    margin-top: .65rem;
     font-weight: 550;
   }
   .round-btn {
-    display:block;
+    position: relative;
     height: 50px;
     width: 50px;
     border-radius: 50%;
     border-color:  #163316 !important;
     background-color: #163316 !important;
     color: white;
+  }
+
+  .center-img{
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
   }
