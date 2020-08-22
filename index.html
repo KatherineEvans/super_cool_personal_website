@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css" />
     <link rel="icon" type="image/png" href="assets/favicon.png"/>
-
   </head>
   <body>
     <div class="container" style="height:100%;position: relative;">
@@ -28,9 +27,49 @@
             <a target="_blank" href="mailto:katevansdev@gmail.com" class="round-btn button p-2 mr-3">
               <img class="m-auto center-img" src="assets/mail.png" style="width: 34px;">
             </a>
-            <!-- <a class="round-btn button p-2">
-              <img class="m-auto center-img" src="assets/sunglasses.png" style="width: 38px;">
-            </a> -->
+            <button id="modalButton" type="button" data-toggle="modal" data-target="#nonprofitModal" class="round-btn button p-0">
+              <img class="m-auto" src="assets/Exclamation_Icon.png" style="width: 34px;">
+            </button>
+          </div>
+          <div class="modal fade" id="nonprofitModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-body text-center">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <img class="my-3" style="width:85%" src="assets/wac.svg">
+                  <div class="m-3">As a current Associate Board member and an active volunteer with <strong>We All Code</strong>, we'd love to have you join us!</div>
+                  <div>
+                    <p><strong>We All Code</strong> exists because we believe every kid deserves to excel in one of the emerging fields of <strong>STEM</strong>, whether they choose to pursue more education or go straight into careers in computer science. Our mission is to inspire, support, and teach these skills to help them be successful.</p>
+                  </div>
+                  <div>
+                    <p><strong>We All Code</strong> is open to all kids ages 7 to 17 with a focus toward kids from underserved areas. We offer <strong>FREE</strong> classes in HTML, CSS, JavaScript, and Python.</p>
+                  </div>
+                  <!-- <div class="text-left">
+                    <h4 class="mt-2" style="color:#426CFF;padding-left:20px;font-weight:bold;">Benefits</h4>
+                    <ul class="mt-2">
+                      <li>
+                        <p>Free classes are open to kids across Chicago</p>
+                      </li>
+                      <li>
+                        <p>Highly-trained instructors and mentors teach coding skills</p>
+                      </li>
+                      <li>
+                        <p>Students are encouraged to show what they know with real working projects</p>
+                      </li>
+                      <li>
+                        <p>Kids work collaboratively, respect their peers, and have fun</p>
+                      </li>
+                    </ul>
+                  </div> -->
+                  <div class="mt-4">
+                    <a target="_blank" href="https://weallcode.org/join-us/#donate" type="button" class="btn" style="font-weight:bold;color:#fff;background-color:#426CFF;border-color: #426CFF;" data-dismiss="modal">Donate</a>
+                    <a target="_blank" href="https://weallcode.org/join-us/" type="button" class="btn" style="font-weight:bold;color:#fff;background-color:#DF504D;border-color: #DF504D;">Volunteer</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="about-section row px-4 pr-2">
             <p>Hi! I’m Kat, a software engineer with a love of clean design and well-organized code.</p>
@@ -48,14 +87,18 @@
     </div>
 
     <!-- Scripts -->
-      <script src="assets/js/jquery.min.js"></script>
-      <script src="assets/js/jquery.dropotron.min.js"></script>
-      <script src="assets/js/jquery.scrolly.min.js"></script>
-      <script src="assets/js/jquery.scrollex.min.js"></script>
-      <script src="assets/js/browser.min.js"></script>
-      <script src="assets/js/breakpoints.min.js"></script>
-      <script src="assets/js/util.js"></script>
-      <script src="assets/js/main.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script>
+        var modal = document.getElementById("nonprofitModal");
 
+        var btn = document.getElementById("modalButton");
+
+        btn.onclick = function() {
+            console.log('fuck');
+            $('#nonprofitModal').modal('toggle');
+        }
+      </script>
   </body>
 </html>
