@@ -9,6 +9,8 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
   }
 
+  button:focus {outline:0;}
+  
   .about-section{
     margin-top: 2rem
   }
