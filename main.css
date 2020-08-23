@@ -3,68 +3,68 @@ html {
 }
 
 body {
-    height:100%;
-    background: #F5EFE1;
-    color: #163316;
-    font-family: 'Source Sans Pro', sans-serif;
-  }
+  height:100%;
+  background: #F5EFE1;
+  color: #163316;
+  font-family: 'Source Sans Pro', sans-serif;
+}
 
-  button:focus {outline:0;}
-  
-  .about-section{
-    margin-top: 2rem
-  }
+button:focus {outline:0;}
 
-  .flex-container {
-    display: flex;
-  }
+.about-section{
+  margin-top: 2rem
+}
 
-  .responsive {
-    max-height: 500px;
-    max-width: 100%;
-    margin: auto;
-  }
+.flex-container {
+  display: flex;
+}
 
-  .name-size {
-    overflow-wrap: break-word;
-    float: left;
-    font-weight: 725;
-    font-size: 75px;
-    line-height: 1em;
-  }
+.responsive {
+  max-height: 500px;
+  max-width: 100%;
+  margin: auto;
+}
 
-  .title-size {
-    font-size: 40px;
-    float: left;
-    margin-right: 3rem;
-    margin-top: .35rem;
-    font-weight: 450;
-    line-height: 1em;
-  }
+.name-size {
+  overflow-wrap: break-word;
+  float: left;
+  font-weight: 725;
+  font-size: 75px;
+  line-height: 1em;
+}
 
-  .email-size {
-    font-size: 20px;
-    float: left;
-    margin-right: 3rem;
-    margin-top: .65rem;
-    font-weight: 550;
-  }
-  .round-btn {
-    position: relative;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    border-color:  #163316 !important;
-    background-color: #163316 !important;
-    color: white;
-  }
+.title-size {
+  font-size: 40px;
+  float: left;
+  margin-right: 3rem;
+  margin-top: .35rem;
+  font-weight: 450;
+  line-height: 1em;
+}
 
-  .center-img{
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-  }
+.email-size {
+  font-size: 20px;
+  float: left;
+  margin-right: 3rem;
+  margin-top: .65rem;
+  font-weight: 550;
+}
+.round-btn {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-color:  #163316 !important;
+  background-color: #163316 !important;
+  color: white;
+}
+
+.center-img{
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
 
 @media screen and (max-width: 500px) {
   .name-size {
