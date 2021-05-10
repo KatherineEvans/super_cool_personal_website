@@ -54,6 +54,10 @@ html, body {
   margin-bottom: 30px;
 }
 
+.test {
+  color: blue;
+}
+
 .bg {
 /* The image used */
 background-image: url("assets/BlueChicago.png");
