@@ -1,94 +1,124 @@
 <!DOCTYPE HTML>
 <html lang="en">
   <head>
-    <title>Katherine Evans</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Atlas</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css" />
     <link rel="icon" type="image/png" href="assets/favicon.png"/>
   </head>
   <body>
-    <div class="container" style="height:100%;position: relative;">
-      <div class="row" style="height:100%">
-        <div class="col-lg-6 col-md-6 col-sm-12 m-auto">
-          <div class="row px-4">
-            <div class="name-size">Kat Evans</div>
-            <div class="title-size"><em>software engineer</em></div>
-            <div class="email-size"><a href="mailto:katevansdev@gmail.com" style="color:#163316;text-decoration: none;">katevansdev@gmail.com</a></div>
-          </div>
-          <div class="row px-4 mt-3">
-            <a target="_blank" href="https://github.com/KatherineEvans" class="round-btn button p-2 mr-3">
-              <img class="m-auto center-img" src="assets/GitHub-Mark-Light-120px-plus.png" style="width: 34px;">
-            </a>
-            <a target="_blank" href="https://www.linkedin.com/in/katherineeevans/" class="round-btn button p-2 mr-3">
-              <img class="m-auto center-img" src="assets/linkedin.png" style="width: 34px;">
-            </a>
-            <a target="_blank" href="mailto:katevansdev@gmail.com" class="round-btn button p-2 mr-3">
-              <img class="m-auto center-img" src="assets/mail.png" style="width: 34px;">
-            </a>
-            <button id="modalButton" type="button" data-toggle="modal" data-target="#nonprofitModal" class="round-btn button p-0" style="cursor: pointer;">
-              <img class="m-auto" src="assets/Exclamation_Icon.png" style="width: 34px;">
-            </button>
-          </div>
-          <div class="modal fade" id="nonprofitModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content">
-                <div class="modal-body text-center">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                  <img class="my-3" style="width:85%" src="assets/wac.svg">
-                  <div class="m-3">As a current Associate Board member and an active volunteer with <strong>We All Code</strong>, I'm asking for your support!</div>
-                  <div>
-                    <p><strong>We All Code</strong> exists because we believe every kid deserves to excel in one of the emerging fields of <strong>STEM</strong>, whether they choose to pursue more education or go straight into careers in computer science. Our mission is to inspire, support, and teach these skills to help them be successful.</p>
-                  </div>
-                  <div>
-                    <p><strong>We All Code</strong> is open to all kids ages 7 to 17 with a focus toward kids from underserved areas. We offer <strong>FREE</strong> classes in HTML, CSS, JavaScript, and Python.</p>
-                  </div>
-                  <div class="mt-4">
-                    <a target="_blank" href="https://weallcode.org/join-us/#donate" type="button" class="btn btn-primary" style="font-weight:bold;color:#fff;background-color:#426CFF;border-color: #426CFF;" data-dismiss="modal">Donate</a>
-                    <a target="_blank" href="https://weallcode.org/join-us/" type="button" class="btn btn-primary" style="font-weight:bold;color:#fff;background-color:#DF504D;border-color: #DF504D;">Volunteer</a>
-                  </div>
+      <div class="main">
+        <div class="bg">
+            <div class="sm-bgc flex-center position-ref full-height">
+                <div class="container">
+                    <!-- <img src="images/chicagoskyline.jpg" alt="Chicago Skyline" width="500" style="position:relative;"> -->
+                    <div class="row mx-1">
+                        <div class="col d-none d-md-block"></div>
+                        <div class="col pr-0">
+                            <div class="row text-center m-auto">
+                                <div class="text-center m-auto title mb-2" style="color:#BBC5EF;background:none;font-weight:500;position:relative;font-family:DonauUppercase-Neue;">
+                                    CHICAGO ARTIST ATLAS
+                                </div>
+                                <div>
+                                    <p style="color:#BBC5EF;">Atlas is the ultimate destination for Chicago theatre artists and makers. We combine vital information in an easily navigated, one-stop-shop with original content from experts in our community to guide you on your journey. The site is scheduled to hit the road this fall. We can't wait to have you along for the ride!</p>
+                                </div>
+                            </div>
+                            <div class="row mt-5" id="fall-2020">
+                                <div class="text-center m-auto h4 mb-3" style="color:#BBC5EF;background:none;position:relative;font-family:DonauUppercase-Neue;">
+                                    COMING FALL OF 2021...
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="text-center m-auto text-white">
+                                    <button id="join-button" type="button" class="btn btn-light" style="background-color:#BBC5EF;color:#030e29;border:none;font-weight:700;" onclick="showNotify()">Join our waiting list</button>
+                                </div>
+                            </div>
+                            <div id="notify-form" style="display:none;">
+                                <form>
+                                    <div class="form-group row mt-3 pt-2">
+                                        <div class="col-6 m-auto">
+                                            <div>
+                                                <input id="form_first_name" type="text" class="form-control" placeholder="First Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-6 m-auto">
+                                            <div>
+                                                <input id="form_last_name" type="text" class="form-control" placeholder="Last Name">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row mt-3 pt-2">
+                                        <div class="col-12 m-auto">
+                                            <div>
+                                                <input id="form_email" type="text" class="form-control" placeholder="Email">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3 pt-2 m-auto center">
+                                        <button type="button" onclick="showThanks()" class="btn btn-light m-auto" style="background-color:#BBC5EF;color:#030e29;border:none;font-weight:700;">Notify Me!</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div id="thankyou-message" class="text-center" style="display:none;">
+                                <h4 style="color:#BBC5EF;font-family:DonauUppercase-Neue;">THANK YOU!</h4>
+                                <p style="color:#BBC5EF;">We're so happy you joined our mailing list! You will receive an email as soon as Chicago Artist Atlas is live.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="about-section row px-4 pr-2">
-            <p>Hi! I’m Kat, a software engineer with a love of clean design and well-organized code.</p>
-            <p>A perennial student, I find joy in learning new things and sharing these discoveries with others! What started as a hobby grew into a desire to learn all I could about software engineering and to apply those skills towards tackling real-world problems, improving peoples’ lives, and doing good in the world. </p>          
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 m-auto flip-container">
-            <img id="kat-front" class="m-auto float-center responsive" src="assets/Kat_Front_Arrow.png" style="cursor: pointer;">
-            <img id="kat-back" class="m-auto float-center responsive" src="assets/Kat_Back_Arrow.png" style="display:none;cursor: pointer;">
-            <!-- <img class="kat-cool m-auto float-center responsive" src="assets/Cool_Kat.png"> -->
         </div>
       </div>
-    </div>
 
     <!-- Scripts -->
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
       <script>
-        var modal = document.getElementById("nonprofitModal");
-        var btn = document.getElementById("modalButton");
-        var front = document.getElementById("kat-front");
-        var back = document.getElementById("kat-back");
-
-        front.onclick = function() {
-          $('#kat-back').show();
-          $('#kat-front').hide();
+        function showNotify() {
+            var x = document.getElementById("notify-form");
+            var y = document.getElementById("join-button");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+              y.style.display = "none";
+            } else {
+              x.style.display = "none";
+            }
+            
         }
 
-        back.onclick = function() {
-          $('#kat-front').show();
-          $('#kat-back').hide();
-        }
+        function showThanks() {
+          var x = document.getElementById("notify-form");
+          var y = document.getElementById("thankyou-message");
+          var z = document.getElementById("fall-2020");
+          if (x.style.display === "none") {
+              x.style.display = "block";
+              y.style.display = "none";
+              z.style.display = "block";
+          } else {
+              x.style.display = "none";
+              y.style.display = "block";
+              z.style.display = "none";
+          }
 
-        btn.onclick = function() {
-            $('#nonprofitModal').modal('toggle');
+          var first_name = document.getElementById("form_first_name").value;
+          var last_name = document.getElementById("form_last_name").value;
+          var email = document.getElementById("form_email").value;
+
+          let data = {'first_name': first_name, 'last_name': last_name, 'email': email}
+          fetch('https://hooks.zapier.com/hooks/catch/8116619/ofo7jap/', {
+            method: 'post',
+            body: JSON.stringify(data)
+          }).then(function(response) {
+            
+          })
         }
       </script>
   </body>

@@ -1,104 +1,74 @@
-html {
-  height:100%;
+@font-face {
+  font-family: DonauUppercase-Neue;
+  src: url('/fonts/DonauUppercase-Neue.tff');
 }
 
-body {
-  height:100%;
-  background: #F5EFE1;
-  color: #163316;
-  font-family: 'Source Sans Pro', sans-serif;
+html, body {
+  background-color: #fff;
+  color: #636b6f;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 200;
+  height: 100vh;
+  margin: 0;
 }
 
-button:focus {outline:0;}
-
-.about-section{
-  margin-top: 2rem
+.full-height {
+  height: 100vh;
 }
 
-.flex-container {
+.flex-center {
+  align-items: center;
   display: flex;
+  justify-content: center;
 }
 
-.responsive {
-  max-height: 500px;
-  max-width: 100%;
-  margin: auto;
-}
-
-.name-size {
-  overflow-wrap: break-word;
-  float: left;
-  font-weight: 725;
-  font-size: 75px;
-  line-height: 1em;
-}
-
-.title-size {
-  font-size: 40px;
-  float: left;
-  margin-right: 3rem;
-  margin-top: .35rem;
-  font-weight: 450;
-  line-height: 1em;
-}
-
-.email-size {
-  font-size: 20px;
-  float: left;
-  margin-right: 3rem;
-  margin-top: .65rem;
-  font-weight: 550;
-}
-.round-btn {
+.position-ref {
   position: relative;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  border-color:  #163316 !important;
-  background-color: #163316 !important;
-  color: white;
 }
 
-.center-img{
+.top-right {
   position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  right: 10px;
+  top: 18px;
 }
 
-@media screen and (max-width: 500px) {
-  .name-size {
-    font-size: 55px !important;
-    margin-top: 2rem;
-  }
-  .title-size {
-    font-size: 30px;
-    margin-right: 0rem;
-  }
-  .email-size {
-    font-size: 20px;
-    margin-right: 0rem;
-    font-weight: 450;
-  }
-  .about-section{
-    margin-top: 2rem
-  }
+.content {
+  text-align: center;
 }
 
-@media screen and (max-width: 500px) {
-  .name-size {
-    font-size: 55px !important;
-  }
-  .title-size {
-    font-size: 30px;
-    margin-right: 0rem;
-  }
-  .email-size {
-    font-size: 20px;
-    margin-right: 0rem;
-    font-weight: 450;
-  }
-  .about-section{
-    margin-top: 2rem
+.title {
+  font-size: 40px;
+}
+
+.links > a {
+  color: #636b6f;
+  padding: 0 25px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.m-b-md {
+  margin-bottom: 30px;
+}
+
+.bg {
+/* The image used */
+background-image: url("assets/BlueChicago.png");
+
+/* Full height */
+height: 100%;
+
+/* Center and scale the image nicely */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+@media only screen and (max-width: 640px) {
+  .sm-bgc{
+      background: rgba(3, 14, 41,.7);
+      /* padding-bottom: 15px; */
   }
 }
